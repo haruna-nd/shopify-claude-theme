@@ -1,0 +1,104 @@
+
+
+<section class="blessed-testimonials">
+  <div class="blessed-container">
+    <div class="blessed-testimonials__inner">
+      <div class="blessed-testimonial-featured">
+        <blockquote class="blessed-testimonial-featured__quote">
+          {{ section.settings.featured_quote }}
+        </blockquote>
+        <div class="blessed-testimonial-featured__author">{{ section.settings.featured_author | default: 'Nigel Hayes-Davis' }}</div>
+        <div class="blessed-testimonial-featured__role">{{ section.settings.featured_role | default: 'FC Barcelona · Euroleague' }}</div>
+      </div>
+
+      <div class="blessed-testimonials-list">
+        {% for block in section.blocks %}
+          {% if block.type == 'testimonial' %}
+            <div class="blessed-testimonial-item" {{ block.shopify_attributes }}>
+              <p class="blessed-testimonial-item__quote">{{ block.settings.quote }}</p>
+              <div class="blessed-testimonial-item__author">{{ block.settings.author }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "tag": "div",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "featured_quote",
+      "label": "Featured Quote",
+      "default": "Blessed is not just a brand — it's a mindset. Every time I step on the court wearing it, I feel that."
+    },
+    {
+      "type": "text",
+      "id": "featured_author",
+      "label": "Featured Author",
+      "default": "Nigel Hayes-Davis"
+    },
+    {
+      "type": "text",
+      "id": "featured_role",
+      "label": "Featured Role / Club",
+      "default": "FC Barcelona · Euroleague"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote",
+          "default": "The quality is unreal. Finally a brand that understands what athletes actually need."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Verified Athlete"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The quality is unreal. Finally a brand that understands what athletes actually need.",
+            "author": "Marco B. — Pro Player"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Wore the set all through pre-season. Most comfortable training gear I've ever had.",
+            "author": "Jamal T. — Swiss League"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The aesthetics match the performance. It's rare to find that combination.",
+            "author": "A. Santos — Euroleague Academy"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,142 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ * ------------------------------------------------------------
+ */{
+  "sections": {
+    "hoops_hero": {
+      "type": "hero",
+      "blocks": {
+        "hoops_eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Community</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.625rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground-heading)",
+            "padding-block-start": 0,
+            "padding-block-end": 12,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "hoops_headline": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Blessed<br>Hoops</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "tight",
+            "letter_spacing": "normal",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "padding-block-start": 0,
+            "padding-block-end": 20,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "hoops_sub": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A community of ballers, grinders, and dreamers. From weekend warriors to Euroleague pros — this is where the blessed play.</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "line_height": "relaxed",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["hoops_eyebrow", "hoops_headline", "hoops_sub"],
+      "name": "Blessed Hoops Hero",
+      "settings": {
+        "media_type_1": "image",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-end",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 0,
+        "section_width": "full-width",
+        "section_height": "large",
+        "color_scheme": "scheme-1",
+        "toggle_overlay": true,
+        "overlay_color": "#0a0a0a99",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "hoops_content": {
+      "type": "main-page",
+      "blocks": {
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": ["page-content"],
+      "name": "Blessed Hoops Content",
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 64,
+        "padding-block-end": 80
+      }
+    },
+    "hoops_proof": {
+      "type": "blessed-proof-band",
+      "blocks": {
+        "logo_barcelona": { "type": "logo", "settings": { "name": "FC Barcelona" } },
+        "logo_euroleague": { "type": "logo", "settings": { "name": "Euroleague" } },
+        "logo_nba": { "type": "logo", "settings": { "name": "NBA" } },
+        "logo_marbury": { "type": "logo", "settings": { "name": "Stephon Marbury" } }
+      },
+      "block_order": ["logo_barcelona", "logo_euroleague", "logo_nba", "logo_marbury"],
+      "name": "Partners",
+      "settings": { "label": "Played at" }
+    }
+  },
+  "order": [
+    "hoops_hero",
+    "hoops_content",
+    "hoops_proof"
+  ]
+}

@@ -6,43 +6,111 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
-    "hero_jVaWmY": {
+    "hero_blessed": {
       "type": "hero",
       "blocks": {
-        "text_YLPk4p": {
+        "eyebrow_text": {
           "type": "text",
-          "name": "t:names.heading",
+          "name": "Eyebrow",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
+            "text": "<p>New Season — 2025</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h2",
+            "type_preset": "custom",
             "font": "var(--font-body--family)",
-            "font_size": "1rem",
+            "font_size": "0.625rem",
             "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "headline_text": {
+          "type": "text",
+          "name": "Headline",
+          "settings": {
+            "text": "<p>Earned,<br>Not Given.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "tight",
             "letter_spacing": "normal",
-            "case": "none",
+            "case": "uppercase",
             "wrap": "pretty",
             "color": "var(--color-foreground-heading)",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 24,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {}
         },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
+        "sub_text": {
+          "type": "text",
+          "name": "Subheading",
           "settings": {
-            "label": "Shop all",
+            "text": "<p>Premium basketball sportswear — worn by Euroleague professionals and built for those who earn it.</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "line_height": "relaxed",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 40,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cta_primary": {
+          "type": "button",
+          "name": "Primary CTA",
+          "settings": {
+            "label": "Shop The Drop",
             "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
+        "cta_secondary": {
+          "type": "button",
+          "name": "Secondary CTA",
+          "settings": {
+            "label": "Our Story",
+            "link": "/pages/about-us",
             "open_in_new_tab": false,
             "style_class": "button-secondary",
             "width": "fit-content",
@@ -54,10 +122,13 @@
         }
       },
       "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
+        "eyebrow_text",
+        "headline_text",
+        "sub_text",
+        "cta_primary",
+        "cta_secondary"
       ],
-      "name": "t:names.hero",
+      "name": "Hero",
       "settings": {
         "media_type_1": "image",
         "media_type_2": "image",
@@ -68,27 +139,157 @@
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
+        "horizontal_alignment": "flex-start",
         "vertical_alignment": "flex-end",
-        "align_baseline": true,
-        "horizontal_alignment_flex_direction_column": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-6",
+        "gap": 0,
+        "section_width": "full-width",
+        "section_height": "full",
+        "section_height_custom": 100,
+        "color_scheme": "scheme-1",
         "toggle_overlay": true,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
+        "overlay_color": "#0a0a0a99",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 100,
-        "padding-block-end": 72
+        "padding-block-end": 80
       }
     },
-    "product_list_fa6P9H": {
+    "marquee_blessed": {
+      "type": "marquee",
+      "blocks": {
+        "marquee_text_1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FREE SHIPPING OVER CHF 150</p>",
+            "width": "fit-content",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "0.8125rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap"
+          }
+        },
+        "marquee_divider_1": {
+          "type": "_divider",
+          "settings": {}
+        },
+        "marquee_text_2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>NEW SEASON DROP</p>",
+            "width": "fit-content",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "0.8125rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap"
+          }
+        },
+        "marquee_divider_2": {
+          "type": "_divider",
+          "settings": {}
+        },
+        "marquee_text_3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>EARNED NOT GIVEN</p>",
+            "width": "fit-content",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "0.8125rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap"
+          }
+        },
+        "marquee_divider_3": {
+          "type": "_divider",
+          "settings": {}
+        },
+        "marquee_text_4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WORN BY EUROLEAGUE PROS</p>",
+            "width": "fit-content",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "0.8125rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap"
+          }
+        },
+        "marquee_divider_4": {
+          "type": "_divider",
+          "settings": {}
+        },
+        "marquee_text_5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>THE GRIND NEVER STOPS</p>",
+            "width": "fit-content",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "0.8125rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap"
+          }
+        },
+        "marquee_divider_5": {
+          "type": "_divider",
+          "settings": {}
+        },
+        "marquee_text_6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>BLESSED</p>",
+            "width": "fit-content",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "0.8125rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap"
+          }
+        }
+      },
+      "block_order": [
+        "marquee_text_1",
+        "marquee_divider_1",
+        "marquee_text_2",
+        "marquee_divider_2",
+        "marquee_text_3",
+        "marquee_divider_3",
+        "marquee_text_4",
+        "marquee_divider_4",
+        "marquee_text_5",
+        "marquee_divider_5",
+        "marquee_text_6"
+      ],
+      "name": "Marquee",
+      "settings": {
+        "movement_direction": "reverse",
+        "color_scheme": "scheme-2",
+        "padding-block-start": 14,
+        "padding-block-end": 14,
+        "gap_between_elements": 40
+      }
+    },
+    "product_list_featured": {
       "type": "product-list",
       "blocks": {
         "static-header": {
@@ -113,8 +314,6 @@
             "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -125,25 +324,45 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_list_text_YFtzcL": {
+            "section_eyebrow": {
               "type": "_product-list-text",
-              "name": "t:names.collection_title",
+              "name": "Eyebrow",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<p>New Arrivals</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
+                "font_size": "0.625rem",
+                "line_height": "normal",
+                "letter_spacing": "loose",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "padding-block-start": 0,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "section_title": {
+              "type": "_product-list-text",
+              "name": "Title",
+              "settings": {
+                "text": "<h2>Featured Collection</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-heading--family)",
                 "font_size": "",
                 "line_height": "normal",
                 "letter_spacing": "normal",
-                "case": "none",
+                "case": "uppercase",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "color": "var(--color-foreground-heading)",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -151,11 +370,11 @@
               },
               "blocks": {}
             },
-            "product_list_button_MWeP9V": {
+            "view_all_button": {
               "type": "_product-list-button",
-              "name": "t:names.product_list_button",
+              "name": "View All",
               "settings": {
-                "label": "View all",
+                "label": "View all →",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -167,8 +386,9 @@
             }
           },
           "block_order": [
-            "product_list_text_YFtzcL",
-            "product_list_button_MWeP9V"
+            "section_eyebrow",
+            "section_title",
+            "view_all_button"
           ]
         },
         "static-product-card": {
@@ -176,7 +396,7 @@
           "name": "t:names.product_card",
           "static": true,
           "settings": {
-            "product_card_gap": 4,
+            "product_card_gap": 2,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
@@ -189,11 +409,11 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_card_gallery_677WP3": {
+            "product_gallery": {
               "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
+              "name": "Media",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -205,34 +425,31 @@
               },
               "blocks": {}
             },
-            "product_title_YXxMTj": {
+            "product_title": {
               "type": "product-title",
-              "name": "t:names.product_title",
+              "name": "Title",
               "settings": {
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "0.75rem",
                 "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
+                "letter_spacing": "loose",
+                "case": "uppercase",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 4,
+                "padding-block-start": 12,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "price_JQzVV4": {
+            "product_price": {
               "type": "price",
-              "name": "t:names.product_price",
+              "name": "Price",
               "settings": {
                 "show_sale_price_first": true,
                 "show_installments": false,
@@ -240,13 +457,13 @@
                 "type_preset": "h6",
                 "width": "100%",
                 "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.25rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 0,
+                "color": "var(--color-foreground-heading)",
+                "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -255,13 +472,13 @@
             }
           },
           "block_order": [
-            "product_card_gallery_677WP3",
-            "product_title_YXxMTj",
-            "price_JQzVV4"
+            "product_gallery",
+            "product_title",
+            "product_price"
           ]
         }
       },
-      "name": "Featured collection",
+      "name": "Featured Products",
       "settings": {
         "collection": "all",
         "layout_type": "grid",
@@ -269,22 +486,248 @@
         "max_products": 8,
         "columns": 4,
         "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
+        "mobile_card_size": "80cqw",
+        "columns_gap": 2,
+        "rows_gap": 2,
         "icons_style": "arrow",
         "icons_shape": "none",
-        "section_width": "page-width",
+        "section_width": "full-width",
         "horizontal_alignment": "flex-start",
-        "gap": 28,
+        "gap": 40,
         "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 80,
+        "padding-block-end": 0
+      }
+    },
+    "collection_feature": {
+      "type": "blessed-collection-feature",
+      "blocks": {
+        "panel_1": {
+          "type": "panel",
+          "settings": {
+            "eyebrow": "New Season",
+            "collection_name": "The Grind",
+            "link": "/collections/all"
+          }
+        },
+        "panel_2": {
+          "type": "panel",
+          "settings": {
+            "eyebrow": "Limited Drop",
+            "collection_name": "The Blessed",
+            "link": "/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "panel_1",
+        "panel_2"
+      ],
+      "name": "Collection Feature Panels",
+      "settings": {}
+    },
+    "brand_story": {
+      "type": "blessed-brand-story",
+      "blocks": {
+        "stat_athletes": {
+          "type": "stat",
+          "settings": {
+            "number": "12+",
+            "label": "Pro Athletes"
+          }
+        },
+        "stat_countries": {
+          "type": "stat",
+          "settings": {
+            "number": "3",
+            "label": "Countries"
+          }
+        },
+        "stat_founded": {
+          "type": "stat",
+          "settings": {
+            "number": "2022",
+            "label": "Founded"
+          }
+        }
+      },
+      "block_order": [
+        "stat_athletes",
+        "stat_countries",
+        "stat_founded"
+      ],
+      "name": "Brand Story",
+      "settings": {
+        "eyebrow": "The Movement",
+        "body_1": "Blessed Sportswear was forged in the gyms and courts of Switzerland — where ambition meets discipline, and every rep is a prayer.",
+        "body_2": "Worn by Euroleague professionals and grinders alike, our pieces carry the weight of what it means to be truly blessed.",
+        "link": "/pages/about-us",
+        "link_label": "Our Story"
+      }
+    },
+    "pillars": {
+      "type": "blessed-pillars",
+      "blocks": {
+        "pillar_1": {
+          "type": "pillar",
+          "settings": {
+            "title": "The Grind",
+            "text": "Every session, every rep, every sacrifice. The grind is the foundation — there are no shortcuts to greatness."
+          }
+        },
+        "pillar_2": {
+          "type": "pillar",
+          "settings": {
+            "title": "The Breakthrough",
+            "text": "The moment when preparation meets opportunity. When all those hours in the dark finally see the light."
+          }
+        },
+        "pillar_3": {
+          "type": "pillar",
+          "settings": {
+            "title": "The Gratitude",
+            "text": "To be blessed is to be grateful. Every day on the court is a gift — wear it like you know that."
+          }
+        },
+        "pillar_4": {
+          "type": "pillar",
+          "settings": {
+            "title": "The Quiet",
+            "text": "Champions speak through their game. Stay focused, stay humble. Let the work do the talking."
+          }
+        }
+      },
+      "block_order": [
+        "pillar_1",
+        "pillar_2",
+        "pillar_3",
+        "pillar_4"
+      ],
+      "name": "Brand Pillars",
+      "settings": {}
+    },
+    "proof_band": {
+      "type": "blessed-proof-band",
+      "blocks": {
+        "logo_barcelona": {
+          "type": "logo",
+          "settings": {
+            "name": "FC Barcelona"
+          }
+        },
+        "logo_euroleague": {
+          "type": "logo",
+          "settings": {
+            "name": "Euroleague"
+          }
+        },
+        "logo_nba": {
+          "type": "logo",
+          "settings": {
+            "name": "NBA"
+          }
+        },
+        "logo_marbury": {
+          "type": "logo",
+          "settings": {
+            "name": "Stephon Marbury"
+          }
+        }
+      },
+      "block_order": [
+        "logo_barcelona",
+        "logo_euroleague",
+        "logo_nba",
+        "logo_marbury"
+      ],
+      "name": "Proof Band",
+      "settings": {
+        "label": "Worn by"
+      }
+    },
+    "testimonials": {
+      "type": "blessed-testimonials",
+      "blocks": {
+        "testimonial_1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The quality is unreal. Finally a brand that understands what athletes actually need.",
+            "author": "Marco B. — Pro Player"
+          }
+        },
+        "testimonial_2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Wore the set all through pre-season. Most comfortable training gear I've ever had.",
+            "author": "Jamal T. — Swiss League"
+          }
+        },
+        "testimonial_3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The aesthetics match the performance. It's rare to find that combination.",
+            "author": "A. Santos — Euroleague Academy"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_1",
+        "testimonial_2",
+        "testimonial_3"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "featured_quote": "Blessed is not just a brand — it's a mindset. Every time I step on the court wearing it, I feel that.",
+        "featured_author": "Nigel Hayes-Davis",
+        "featured_role": "FC Barcelona · Euroleague"
+      }
+    },
+    "email_capture": {
+      "type": "blessed-email-capture",
+      "blocks": {
+        "perk_1": {
+          "type": "perk",
+          "settings": {
+            "text": "Early access to new drops"
+          }
+        },
+        "perk_2": {
+          "type": "perk",
+          "settings": {
+            "text": "Exclusive athlete discounts"
+          }
+        },
+        "perk_3": {
+          "type": "perk",
+          "settings": {
+            "text": "Behind-the-scenes content"
+          }
+        }
+      },
+      "block_order": [
+        "perk_1",
+        "perk_2",
+        "perk_3"
+      ],
+      "name": "Email Capture",
+      "settings": {
+        "heading": "Stay In The Loop",
+        "description": "New drops, exclusive access, and athletes-only content — straight to your inbox.",
+        "placeholder": "Your email address",
+        "button_label": "Subscribe",
+        "note": "No spam. Unsubscribe any time."
       }
     }
   },
   "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "hero_blessed",
+    "marquee_blessed",
+    "product_list_featured",
+    "collection_feature",
+    "brand_story",
+    "pillars",
+    "proof_band",
+    "testimonials",
+    "email_capture"
   ]
 }

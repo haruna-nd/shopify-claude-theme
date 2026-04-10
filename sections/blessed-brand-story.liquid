@@ -1,0 +1,146 @@
+
+
+<section class="blessed-brand-story">
+  <div class="blessed-container">
+    <div class="blessed-brand-story__inner">
+      <div class="blessed-brand-story__visual">
+        <div class="blessed-brand-story__accent-line"></div>
+        {% if section.settings.image != blank %}
+          {{
+            section.settings.image
+            | image_url: width: 800
+            | image_tag:
+              class: 'blessed-brand-story__img',
+              loading: 'lazy',
+              widths: '400, 600, 800'
+          }}
+        {% else %}
+          <div style="width:100%; aspect-ratio:4/5; background: var(--charcoal);"></div>
+        {% endif %}
+        <div class="blessed-brand-story__tag">Est. From The Court</div>
+      </div>
+
+      <div class="blessed-brand-story__text">
+        {% if section.settings.eyebrow != blank %}
+          <p class="blessed-section-label" style="font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:16px;">
+            {{ section.settings.eyebrow }}
+          </p>
+        {% endif %}
+        <h2 style="font-family:var(--font-display); font-size:clamp(48px,5vw,72px); line-height:0.95; color:var(--white); margin-bottom:32px; letter-spacing:0.04em;">
+          {{ section.settings.heading | default: 'Born From<br>The Court' }}
+        </h2>
+        {% if section.settings.body_1 != blank %}
+          <p class="blessed-brand-story__body">{{ section.settings.body_1 }}</p>
+        {% endif %}
+        {% if section.settings.body_2 != blank %}
+          <p class="blessed-brand-story__body">{{ section.settings.body_2 }}</p>
+        {% endif %}
+        {% if section.settings.link != blank %}
+          <a href="{{ section.settings.link }}" class="btn-ghost" style="margin-top:8px;">{{ section.settings.link_label | default: 'Our Story' }}</a>
+        {% endif %}
+
+        <div class="blessed-stats">
+          {% for block in section.blocks %}
+            {% if block.type == 'stat' %}
+              <div class="blessed-stat" {{ block.shopify_attributes }}>
+                <div class="blessed-stat__num">{{ block.settings.number }}</div>
+                <div class="blessed-stat__label">{{ block.settings.label }}</div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Brand Story",
+  "tag": "div",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Story Image"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "The Movement"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Born From<br>The Court</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "body_1",
+      "label": "First Paragraph",
+      "default": "Blessed Sportswear was forged in the gyms and courts of Switzerland — where ambition meets discipline, and every rep is a prayer."
+    },
+    {
+      "type": "textarea",
+      "id": "body_2",
+      "label": "Second Paragraph",
+      "default": "Worn by Euroleague professionals and grinders alike, our pieces carry the weight of what it means to be truly blessed."
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link URL"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Link Label",
+      "default": "Our Story"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "12+"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Pro Athletes"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Story",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": { "number": "12+", "label": "Pro Athletes" }
+        },
+        {
+          "type": "stat",
+          "settings": { "number": "3", "label": "Countries" }
+        },
+        {
+          "type": "stat",
+          "settings": { "number": "2022", "label": "Founded" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

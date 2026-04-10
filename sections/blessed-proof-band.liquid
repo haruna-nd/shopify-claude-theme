@@ -1,0 +1,62 @@
+
+
+<section class="blessed-proof-band">
+  <div class="blessed-container">
+    <div class="blessed-proof-band__inner">
+      <span class="blessed-proof-band__label">{{ section.settings.label | default: 'Worn by' }}</span>
+      <div class="blessed-proof-band__divider"></div>
+      <div class="blessed-proof-band__logos">
+        {% for block in section.blocks %}
+          {% if block.type == 'logo' %}
+            <span class="blessed-proof-band__logo" {{ block.shopify_attributes }}>
+              {{ block.settings.name }}
+            </span>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Proof Band",
+  "tag": "div",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "Worn by"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Partner / Team",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "FC Barcelona"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Proof Band",
+      "blocks": [
+        { "type": "logo", "settings": { "name": "FC Barcelona" } },
+        { "type": "logo", "settings": { "name": "Euroleague" } },
+        { "type": "logo", "settings": { "name": "NBA" } },
+        { "type": "logo", "settings": { "name": "Stephon Marbury" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

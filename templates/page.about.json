@@ -1,0 +1,215 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "about_hero": {
+      "type": "hero",
+      "blocks": {
+        "about_eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Movement</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.625rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground-heading)",
+            "padding-block-start": 0,
+            "padding-block-end": 12,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "about_headline": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Story</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "tight",
+            "letter_spacing": "normal",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "about_eyebrow",
+        "about_headline"
+      ],
+      "name": "About Hero",
+      "settings": {
+        "media_type_1": "image",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-end",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 0,
+        "section_width": "full-width",
+        "section_height": "medium",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "toggle_overlay": true,
+        "overlay_color": "#0a0a0a99",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "about_brand_story": {
+      "type": "blessed-brand-story",
+      "blocks": {
+        "stat_athletes": {
+          "type": "stat",
+          "settings": {
+            "number": "12+",
+            "label": "Pro Athletes"
+          }
+        },
+        "stat_countries": {
+          "type": "stat",
+          "settings": {
+            "number": "3",
+            "label": "Countries"
+          }
+        },
+        "stat_founded": {
+          "type": "stat",
+          "settings": {
+            "number": "2022",
+            "label": "Founded"
+          }
+        }
+      },
+      "block_order": [
+        "stat_athletes",
+        "stat_countries",
+        "stat_founded"
+      ],
+      "name": "Brand Story",
+      "settings": {
+        "eyebrow": "The Movement",
+        "body_1": "Blessed Sportswear was forged in the gyms and courts of Switzerland — where ambition meets discipline, and every rep is a prayer.",
+        "body_2": "Worn by Euroleague professionals and grinders alike, our pieces carry the weight of what it means to be truly blessed.",
+        "link": "/collections/all",
+        "link_label": "Shop The Collection"
+      }
+    },
+    "about_pillars": {
+      "type": "blessed-pillars",
+      "blocks": {
+        "pillar_1": {
+          "type": "pillar",
+          "settings": {
+            "title": "The Grind",
+            "text": "Every session, every rep, every sacrifice. The grind is the foundation — there are no shortcuts to greatness."
+          }
+        },
+        "pillar_2": {
+          "type": "pillar",
+          "settings": {
+            "title": "The Breakthrough",
+            "text": "The moment when preparation meets opportunity. When all those hours in the dark finally see the light."
+          }
+        },
+        "pillar_3": {
+          "type": "pillar",
+          "settings": {
+            "title": "The Gratitude",
+            "text": "To be blessed is to be grateful. Every day on the court is a gift — wear it like you know that."
+          }
+        },
+        "pillar_4": {
+          "type": "pillar",
+          "settings": {
+            "title": "The Quiet",
+            "text": "Champions speak through their game. Stay focused, stay humble. Let the work do the talking."
+          }
+        }
+      },
+      "block_order": [
+        "pillar_1",
+        "pillar_2",
+        "pillar_3",
+        "pillar_4"
+      ],
+      "name": "Brand Pillars",
+      "settings": {}
+    },
+    "about_cta": {
+      "type": "blessed-email-capture",
+      "blocks": {
+        "perk_1": {
+          "type": "perk",
+          "settings": {
+            "text": "Early access to new drops"
+          }
+        },
+        "perk_2": {
+          "type": "perk",
+          "settings": {
+            "text": "Exclusive athlete discounts"
+          }
+        },
+        "perk_3": {
+          "type": "perk",
+          "settings": {
+            "text": "Behind-the-scenes content"
+          }
+        }
+      },
+      "block_order": [
+        "perk_1",
+        "perk_2",
+        "perk_3"
+      ],
+      "name": "Join the Movement",
+      "settings": {
+        "heading": "Join The Movement",
+        "description": "Be the first to know about drops, athlete news, and exclusive access.",
+        "placeholder": "Your email address",
+        "button_label": "Subscribe",
+        "note": "No spam. Unsubscribe any time."
+      }
+    }
+  },
+  "order": [
+    "about_hero",
+    "about_brand_story",
+    "about_pillars",
+    "about_cta"
+  ]
+}

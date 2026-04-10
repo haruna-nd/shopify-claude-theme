@@ -1,0 +1,81 @@
+
+
+<section class="blessed-pillars">
+  <div class="blessed-pillars__grid">
+    {% for block in section.blocks %}
+      {% if block.type == 'pillar' %}
+        <div class="blessed-pillar" {{ block.shopify_attributes }}>
+          <div class="blessed-pillar__num">0{{ forloop.index }}</div>
+          <div class="blessed-pillar__title">{{ block.settings.title }}</div>
+          <p class="blessed-pillar__text">{{ block.settings.text }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Brand Pillars",
+  "tag": "div",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [
+    {
+      "type": "pillar",
+      "name": "Pillar",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "The Grind"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Every session, every rep, every sacrifice. The grind is the foundation — there are no shortcuts to greatness."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Pillars",
+      "blocks": [
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "The Grind",
+            "text": "Every session, every rep, every sacrifice. The grind is the foundation — there are no shortcuts to greatness."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "The Breakthrough",
+            "text": "The moment when preparation meets opportunity. When all those hours in the dark finally see the light."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "The Gratitude",
+            "text": "To be blessed is to be grateful. Every day on the court is a gift — wear it like you know that."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "title": "The Quiet",
+            "text": "Champions speak through their game. Stay focused, stay humble. Let the work do the talking."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

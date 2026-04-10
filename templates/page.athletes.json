@@ -1,0 +1,141 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ * ------------------------------------------------------------
+ */{
+  "sections": {
+    "athletes_hero": {
+      "type": "hero",
+      "blocks": {
+        "athletes_eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Roster</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.625rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground-heading)",
+            "padding-block-start": 0,
+            "padding-block-end": 12,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "athletes_headline": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Blessed<br>Athletes</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "tight",
+            "letter_spacing": "normal",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["athletes_eyebrow", "athletes_headline"],
+      "name": "Athletes Hero",
+      "settings": {
+        "media_type_1": "image",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-end",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 0,
+        "section_width": "full-width",
+        "section_height": "medium",
+        "color_scheme": "scheme-1",
+        "toggle_overlay": true,
+        "overlay_color": "#0a0a0a99",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "athletes_content": {
+      "type": "main-page",
+      "blocks": {
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": ["page-content"],
+      "name": "Athletes Content",
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 64,
+        "padding-block-end": 80
+      }
+    },
+    "athletes_testimonials": {
+      "type": "blessed-testimonials",
+      "blocks": {
+        "testimonial_1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The quality is unreal. Finally a brand that understands what athletes actually need.",
+            "author": "Marco B. — Pro Player"
+          }
+        },
+        "testimonial_2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Wore the set all through pre-season. Most comfortable training gear I've ever had.",
+            "author": "Jamal T. — Swiss League"
+          }
+        },
+        "testimonial_3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The aesthetics match the performance. It's rare to find that combination.",
+            "author": "A. Santos — Euroleague Academy"
+          }
+        }
+      },
+      "block_order": ["testimonial_1", "testimonial_2", "testimonial_3"],
+      "name": "Athlete Quotes",
+      "settings": {
+        "featured_quote": "Blessed is not just a brand — it's a mindset. Every time I step on the court wearing it, I feel that.",
+        "featured_author": "Nigel Hayes-Davis",
+        "featured_role": "FC Barcelona · Euroleague"
+      }
+    }
+  },
+  "order": [
+    "athletes_hero",
+    "athletes_content",
+    "athletes_testimonials"
+  ]
+}
