@@ -131,11 +131,13 @@
       "name": "Hero",
       "settings": {
         "media_type_1": "image",
+        "image_1": "shopify://shop_images/IMG_0499-scaled.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
         "media_type_1_mobile": "image",
         "media_type_2_mobile": "image",
+        "link": "",
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -167,104 +169,205 @@
           "settings": {
             "text": "<p>FREE SHIPPING OVER CHF 150</p>",
             "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-heading--family)",
             "font_size": "0.8125rem",
             "line_height": "normal",
             "letter_spacing": "loose",
             "case": "uppercase",
-            "wrap": "nowrap"
-          }
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         },
         "marquee_divider_1": {
           "type": "_divider",
-          "settings": {}
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
         },
         "marquee_text_2": {
           "type": "text",
           "settings": {
             "text": "<p>NEW SEASON DROP</p>",
             "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-heading--family)",
             "font_size": "0.8125rem",
             "line_height": "normal",
             "letter_spacing": "loose",
             "case": "uppercase",
-            "wrap": "nowrap"
-          }
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         },
         "marquee_divider_2": {
           "type": "_divider",
-          "settings": {}
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
         },
         "marquee_text_3": {
           "type": "text",
           "settings": {
             "text": "<p>EARNED NOT GIVEN</p>",
             "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-heading--family)",
             "font_size": "0.8125rem",
             "line_height": "normal",
             "letter_spacing": "loose",
             "case": "uppercase",
-            "wrap": "nowrap"
-          }
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         },
         "marquee_divider_3": {
           "type": "_divider",
-          "settings": {}
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
         },
         "marquee_text_4": {
           "type": "text",
           "settings": {
             "text": "<p>WORN BY EUROLEAGUE PROS</p>",
             "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-heading--family)",
             "font_size": "0.8125rem",
             "line_height": "normal",
             "letter_spacing": "loose",
             "case": "uppercase",
-            "wrap": "nowrap"
-          }
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         },
         "marquee_divider_4": {
           "type": "_divider",
-          "settings": {}
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
         },
         "marquee_text_5": {
           "type": "text",
           "settings": {
             "text": "<p>THE GRIND NEVER STOPS</p>",
             "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-heading--family)",
             "font_size": "0.8125rem",
             "line_height": "normal",
             "letter_spacing": "loose",
             "case": "uppercase",
-            "wrap": "nowrap"
-          }
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         },
         "marquee_divider_5": {
           "type": "_divider",
-          "settings": {}
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
         },
         "marquee_text_6": {
           "type": "text",
           "settings": {
             "text": "<p>BLESSED</p>",
             "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-heading--family)",
             "font_size": "0.8125rem",
             "line_height": "normal",
             "letter_spacing": "loose",
             "case": "uppercase",
-            "wrap": "nowrap"
-          }
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -314,6 +417,8 @@
             "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -340,6 +445,9 @@
                 "case": "uppercase",
                 "wrap": "pretty",
                 "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 8,
                 "padding-inline-start": 0,
@@ -363,6 +471,9 @@
                 "case": "uppercase",
                 "wrap": "pretty",
                 "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -440,6 +551,9 @@
                 "case": "uppercase",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
                 "padding-block-start": 12,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -559,6 +673,7 @@
       "name": "Brand Story",
       "settings": {
         "eyebrow": "The Movement",
+        "heading": "<p>Born From<br>The Court</p>",
         "body_1": "Blessed Sportswear was forged in the gyms and courts of Switzerland — where ambition meets discipline, and every rep is a prayer.",
         "body_2": "Worn by Euroleague professionals and grinders alike, our pieces carry the weight of what it means to be truly blessed.",
         "link": "/pages/about-us",
