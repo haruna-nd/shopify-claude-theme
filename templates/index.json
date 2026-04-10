@@ -33,7 +33,7 @@
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 16,
-            "padding-inline-start": 0,
+            "padding-inline-start": 10,
             "padding-inline-end": 0
           },
           "blocks": {}
@@ -68,7 +68,7 @@
           "type": "text",
           "name": "Subheading",
           "settings": {
-            "text": "<p>Premium basketball sportswear — worn by Euroleague professionals and built for those who earn it.</p>",
+            "text": "<p>Premium basketball sportswear worn by Euroleague professionals and built for those who earn it.</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -85,7 +85,7 @@
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 40,
-            "padding-inline-start": 0,
+            "padding-inline-start": 15,
             "padding-inline-end": 0
           },
           "blocks": {}
@@ -450,8 +450,8 @@
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 8,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-start": 15,
+                "padding-inline-end": 15
               },
               "blocks": {}
             },
