@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Eyebrow",
           "settings": {
-            "text": "<p>New Season — 2025</p>",
+            "text": "<p>New Season — 2026</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -42,7 +42,7 @@
           "type": "text",
           "name": "Headline",
           "settings": {
-            "text": "<p>Earned,<br>Not Given.</p>",
+            "text": "",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
