@@ -1528,6 +1528,9 @@ footer,
   font-weight: 700 !important;
   letter-spacing: 0.18em !important;
   text-transform: uppercase !important;
+  text-align: center !important;
+  justify-items: center !important;
+  justify-content: center !important;
   padding: 18px 24px !important;
   cursor: pointer !important;
   transition: background var(--transition) !important;
