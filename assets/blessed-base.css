@@ -1665,3 +1665,11 @@ quick-add-modal,
 .view-transition-page-leave {
   background: var(--black);
 }
+.add-to-cart-button .add-to-cart-text,
+.add-to-cart-button .add-to-cart__added {
+  grid-row: 1 !important;
+  grid-column: 1 !important;
+}
+.add-to-cart-button {
+  justify-items: center !important;
+}
