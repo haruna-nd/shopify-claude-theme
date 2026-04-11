@@ -619,16 +619,18 @@
         "panel_1": {
           "type": "panel",
           "settings": {
-            "eyebrow": "New Season",
-            "collection_name": "The Grind",
-            "link": "/collections/all"
+            "image": "shopify://shop_images/IMG_1914-Edit-Edit-scaled.jpg",
+            "eyebrow": "The Foundation",
+            "collection_name": "Hoodies",
+            "link": "shopify://collections/hoodies"
           }
         },
         "panel_2": {
           "type": "panel",
           "settings": {
-            "eyebrow": "Limited Drop",
-            "collection_name": "The Blessed",
+            "image": "shopify://shop_images/IMG_0499-scaled.jpg",
+            "eyebrow": "The Full Look",
+            "collection_name": "Sets",
             "link": "/collections/all"
           }
         }
