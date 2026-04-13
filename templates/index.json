@@ -632,7 +632,7 @@
             "image": "shopify://shop_images/IMG_0499-scaled.jpg",
             "eyebrow": "The Full Look",
             "collection_name": "Sets",
-            "link": "/collections/all"
+            "link": "shopify://collections/sets"
           }
         }
       },
