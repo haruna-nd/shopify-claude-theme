@@ -131,7 +131,7 @@
       "name": "Hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/IMG_1914-Edit-Edit-scaled.jpg",
+        "image_1": "shopify://shop_images/IMG_0499-scaled.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -152,7 +152,7 @@
         "section_height_custom": 100,
         "color_scheme": "scheme-1",
         "toggle_overlay": true,
-        "overlay_color": "#0a0a0a99",
+        "overlay_color": "#0a0a0a49",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
