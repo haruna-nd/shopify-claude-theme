@@ -813,7 +813,7 @@
         "perk_2": {
           "type": "perk",
           "settings": {
-            "text": "Exclusive athlete discounts"
+            "text": "Exclusive discounts"
           }
         },
         "perk_3": {
@@ -831,7 +831,7 @@
       "name": "Email Capture",
       "settings": {
         "heading": "Stay In The Loop",
-        "description": "New drops, exclusive access, and athletes-only content — straight to your inbox.",
+        "description": "New drops, exclusive access, and athletes-only content straight to your inbox.",
         "placeholder": "Your email address",
         "button_label": "Subscribe",
         "note": "No spam. Unsubscribe any time."

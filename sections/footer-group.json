@@ -34,10 +34,19 @@
             "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -72,7 +81,7 @@
             "brand_tagline": {
               "type": "text",
               "settings": {
-                "text": "<p>Premium basketball sportswear — forged in dedication, worn by professionals.</p>",
+                "text": "<p>Premium basketball-inspired sports & streetwear. Forged in dedication, worn by professionals.</p>",
                 "width": "100%",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -114,29 +123,69 @@
               "blocks": {}
             }
           },
-          "block_order": ["brand_logo_text", "brand_tagline", "brand_socials"]
+          "block_order": [
+            "brand_logo_text",
+            "brand_tagline",
+            "brand_socials"
+          ]
         },
         "col_shop": {
           "type": "menu",
           "settings": {
-            "menu": "footer-shop",
-            "heading": "Shop"
+            "menu": "",
+            "heading": "Shop",
+            "menu_spacing": 12,
+            "show_as_accordion": false,
+            "accordion_icon": "caret",
+            "accordion_dividers": false,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "heading_preset": "h3",
+            "link_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
         "col_brand_links": {
           "type": "menu",
           "settings": {
-            "menu": "footer-brand",
-            "heading": "The Brand"
+            "menu": "",
+            "heading": "The Brand",
+            "menu_spacing": 12,
+            "show_as_accordion": false,
+            "accordion_icon": "caret",
+            "accordion_dividers": false,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "heading_preset": "h3",
+            "link_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
         "col_support": {
           "type": "menu",
           "settings": {
-            "menu": "footer-support",
-            "heading": "Support"
+            "menu": "",
+            "heading": "Support",
+            "menu_spacing": 12,
+            "show_as_accordion": false,
+            "accordion_icon": "caret",
+            "accordion_dividers": false,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "heading_preset": "h3",
+            "link_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
@@ -175,7 +224,7 @@
             "case": "uppercase"
           },
           "blocks": {}
-        },
+        }
       },
       "block_order": [
         "footer_copyright",
