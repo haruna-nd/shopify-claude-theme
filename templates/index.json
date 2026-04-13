@@ -460,7 +460,7 @@
               "type": "_product-list-text",
               "name": "Title",
               "settings": {
-                "text": "<h2>Featured Collection</h2>",
+                "text": "<h2>New Arrivals</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
