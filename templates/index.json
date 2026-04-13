@@ -433,7 +433,7 @@
               "type": "_product-list-text",
               "name": "Eyebrow",
               "settings": {
-                "text": "<p>New Arrivals</p>",
+                "text": "<p>Spring/S 26'</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -460,9 +460,9 @@
               "name": "Title",
               "settings": {
                 "text": "<h2>New Arrivals</h2>",
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "h3",
                 "font": "var(--font-heading--family)",
                 "font_size": "",
