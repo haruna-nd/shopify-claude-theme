@@ -27,9 +27,12 @@
             "case": "uppercase",
             "wrap": "nowrap",
             "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 12,
-            "padding-inline-start": 0,
+            "padding-inline-start": 10,
             "padding-inline-end": 0
           },
           "blocks": {}
@@ -37,7 +40,7 @@
         "about_headline": {
           "type": "text",
           "settings": {
-            "text": "<p>Our Story</p>",
+            "text": "<p>Our Roots</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -49,9 +52,12 @@
             "case": "uppercase",
             "wrap": "pretty",
             "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 0,
+            "padding-inline-start": 10,
             "padding-inline-end": 0
           },
           "blocks": {}
@@ -64,9 +70,14 @@
       "name": "About Hero",
       "settings": {
         "media_type_1": "image",
+        "image_1": "shopify://shop_images/anelissaphoto-47.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -121,7 +132,9 @@
       ],
       "name": "Brand Story",
       "settings": {
+        "image": "shopify://shop_images/Screenshot_2026-04-11_at_19.41.14.png",
         "eyebrow": "The Movement",
+        "heading": "<p>Born From<br/>The Court</p>",
         "body_1": "Blessed Sportswear was forged in the gyms and courts of Switzerland — where ambition meets discipline, and every rep is a prayer.",
         "body_2": "Worn by Euroleague professionals and grinders alike, our pieces carry the weight of what it means to be truly blessed.",
         "link": "/collections/all",
