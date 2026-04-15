@@ -40,7 +40,7 @@
         "about_headline": {
           "type": "text",
           "settings": {
-            "text": "<p>Our Roots</p>",
+            "text": "<p>Born From The Court</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
