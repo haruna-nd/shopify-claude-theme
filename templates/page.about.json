@@ -107,21 +107,21 @@
           "type": "stat",
           "settings": {
             "number": "12+",
-            "label": "Pro Athletes"
+            "label": "Pro Clubs Served"
           }
         },
         "stat_countries": {
           "type": "stat",
           "settings": {
-            "number": "3",
-            "label": "Countries"
+            "number": "6",
+            "label": "Countries Repped"
           }
         },
         "stat_founded": {
           "type": "stat",
           "settings": {
             "number": "2022",
-            "label": "Founded"
+            "label": "Est. from the court"
           }
         }
       },
