@@ -148,28 +148,28 @@
           "type": "pillar",
           "settings": {
             "title": "The Grind",
-            "text": "Every session, every rep, every sacrifice. The grind is the foundation — there are no shortcuts to greatness."
+            "text": "Before the blessing, there's the work. The sessions nobody sees. The early alarms, the sore joints, the days you show up anyway. This is where it starts, and where most people stop"
           }
         },
         "pillar_2": {
           "type": "pillar",
           "settings": {
             "title": "The Breakthrough",
-            "text": "The moment when preparation meets opportunity. When all those hours in the dark finally see the light."
+            "text": "Every grinder has a moment when it clicks. A call-up. A contract. A door that opens because you were ready when it did. Blessed is for that moment, and everything you sacrificed to get there."
           }
         },
         "pillar_3": {
           "type": "pillar",
           "settings": {
             "title": "The Gratitude",
-            "text": "To be blessed is to be grateful. Every day on the court is a gift — wear it like you know that."
+            "text": "When it happens, you don't forget where you came from. That's what \"blessed\" means. Not luck. Earned grace. A quiet acknowledgement that the work was worth it, and something greater had a hand in it."
           }
         },
         "pillar_4": {
           "type": "pillar",
           "settings": {
             "title": "The Quiet",
-            "text": "Champions speak through their game. Stay focused, stay humble. Let the work do the talking."
+            "text": "No hype. No noise. Just quality, intention, and an identity that doesn't need to announce itself. The people who know, know."
           }
         }
       },
@@ -211,7 +211,7 @@
       ],
       "name": "Join the Movement",
       "settings": {
-        "heading": "Join The Movement",
+        "heading": "Stay Connected.",
         "description": "Be the first to know about drops, athlete news, and exclusive access.",
         "placeholder": "Your email address",
         "button_label": "Subscribe",
