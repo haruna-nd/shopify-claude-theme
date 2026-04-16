@@ -692,8 +692,8 @@
         "stat_countries": {
           "type": "stat",
           "settings": {
-            "number": "3",
-            "label": "Countries"
+            "number": "6",
+            "label": "Countries Repped"
           }
         },
         "stat_founded": {
