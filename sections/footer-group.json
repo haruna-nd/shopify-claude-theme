@@ -127,7 +127,7 @@
         "col_shop": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "footer",
             "heading": "Shop",
             "menu_spacing": 12,
             "show_as_accordion": false,
