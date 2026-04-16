@@ -95,7 +95,7 @@
           "name": "Primary CTA",
           "settings": {
             "label": "Shop The Drop",
-            "link": "shopify://collections/hoodies",
+            "link": "shopify://collections/frontpage",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
