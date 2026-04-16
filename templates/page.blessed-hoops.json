@@ -158,10 +158,63 @@
       ],
       "name": "Brand Story",
       "settings": {
+        "image": "shopify://shop_images/Blessed_Hoops_Grassroots.jpg",
         "eyebrow": "Grassroots",
         "heading": "<p>We Didn't Just Borrow Basketball Culture... </p><p>We Built It.</p>",
         "body_1": "Blessed Hoops started in 2017 on the courts of New York City. Not just any courts. Dyckman. Rucker Park. The Gauchos. Places where basketball is a language and showing up means something. From there it grew into camps across Switzerland, the UK, Senegal, Haiti, and the Dominican Republic, welcoming between 50 to 100 players per camp.",
         "body_2": "Over 30 scholarships awarded. Players placed in NCAA programs, European pro leagues, and development academies across Spain, Portugal, and the USA. Coaches, players, and alumni from elite programs on three continents. Giannis Antetokounmpo showed up to watch. Kevin Punter of FC Barcelona came on as an ambassador. This is the world Blessed Sportswear was born into.",
+        "link": "https://blessedhoops.com/",
+        "link_label": "Blessed Hoops"
+      }
+    },
+    "blessed_proof_band_FFge9i": {
+      "type": "blessed-proof-band",
+      "blocks": {
+        "logo_3CTra8": {
+          "type": "logo",
+          "settings": {
+            "name": "FC Barcelona"
+          }
+        },
+        "logo_FPABRV": {
+          "type": "logo",
+          "settings": {
+            "name": "Euroleague"
+          }
+        },
+        "logo_DRdzpD": {
+          "type": "logo",
+          "settings": {
+            "name": "NBA"
+          }
+        },
+        "logo_kdqebz": {
+          "type": "logo",
+          "settings": {
+            "name": "Stephon Marbury"
+          }
+        }
+      },
+      "block_order": [
+        "logo_3CTra8",
+        "logo_FPABRV",
+        "logo_DRdzpD",
+        "logo_kdqebz"
+      ],
+      "name": "Proof Band",
+      "settings": {
+        "label": "Worn by"
+      }
+    },
+    "blessed_brand_story_Ecg3Bf": {
+      "type": "blessed-brand-story",
+      "name": "Brand Story",
+      "settings": {
+        "image": "shopify://shop_images/SnapInsta.to_528744796_18495878866064562_1841576174132476192_n.jpg",
+        "eyebrow": "The Movement",
+        "heading": "<p>The Clothing Was Always Part of It.</p>",
+        "body_1": "Before Blessed Sportswear was a brand, it was what the players wore. The hoodies, the basics, the gear that represented something. When you wore Blessed at a camp, on a court, or walking into a gym, people knew what it stood for. Not hype. Not a logo. A standard. That's the DNA in every piece we make.",
+        "body_2": "",
         "link": "",
         "link_label": "Our Story"
       }
@@ -230,6 +283,8 @@
   "order": [
     "hoops_hero",
     "blessed_brand_story_9q6mGM",
+    "blessed_proof_band_FFge9i",
+    "blessed_brand_story_Ecg3Bf",
     "hoops_content",
     "hoops_proof"
   ]
