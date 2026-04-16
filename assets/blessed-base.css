@@ -1633,7 +1633,7 @@ quick-add-modal,
   .blessed-product-grid { grid-template-columns: 1fr 1fr; }
   .blessed-product-grid .product-card--featured { grid-column: span 2; grid-row: span 1; }
   .blessed-brand-story__inner { grid-template-columns: 1fr; }
-  .blessed-brand-story__visual { display: none; }
+  .blessed-brand-story__visual { display: block; }
   .blessed-collection-feature { grid-template-columns: 1fr; }
   .blessed-pillars__grid { grid-template-columns: 1fr 1fr; }
   .blessed-testimonials__inner { grid-template-columns: 1fr; }
