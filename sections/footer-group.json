@@ -53,24 +53,19 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "brand_logo_text": {
-              "type": "text",
+            "logo_UkD9qY": {
+              "type": "logo",
+              "name": "t:names.logo",
               "settings": {
-                "text": "<p>BLESSED.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-heading--family)",
-                "font_size": "2.25rem",
-                "line_height": "tight",
-                "letter_spacing": "normal",
-                "case": "uppercase",
-                "wrap": "nowrap",
-                "color": "var(--color-foreground-heading)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "inverse": false,
+                "font": "heading",
+                "unit": "percent",
+                "percent_width": 61,
+                "pixel_height": 48,
+                "custom_mobile_size": true,
+                "unit_mobile": "percent",
+                "percent_width_mobile": 100,
+                "pixel_height_mobile": 120,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -124,7 +119,7 @@
             }
           },
           "block_order": [
-            "brand_logo_text",
+            "logo_UkD9qY",
             "brand_tagline",
             "brand_socials"
           ]
