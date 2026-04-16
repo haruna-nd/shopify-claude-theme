@@ -147,7 +147,7 @@
         "col_brand_links": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "footer-brand",
             "heading": "The Brand",
             "menu_spacing": 12,
             "show_as_accordion": false,
@@ -167,7 +167,7 @@
         "col_support": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "footer-support",
             "heading": "Support",
             "menu_spacing": 12,
             "show_as_accordion": false,
