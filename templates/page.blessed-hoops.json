@@ -128,6 +128,7 @@
     },
     "hoops_content": {
       "type": "main-page",
+      "disabled": true,
       "name": "Blessed Hoops Content",
       "settings": {
         "content_direction": "column",
