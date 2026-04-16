@@ -165,6 +165,18 @@
     "marquee_blessed": {
       "type": "marquee",
       "blocks": {
+        "divider_jN879c": {
+          "type": "_divider",
+          "name": "t:names.divider",
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
+        },
         "marquee_text_1": {
           "type": "text",
           "settings": {
@@ -372,6 +384,7 @@
         }
       },
       "block_order": [
+        "divider_jN879c",
         "marquee_text_1",
         "marquee_divider_1",
         "marquee_text_2",
