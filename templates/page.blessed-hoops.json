@@ -1,8 +1,13 @@
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "hoops_hero": {
       "type": "hero",
@@ -22,9 +27,12 @@
             "case": "uppercase",
             "wrap": "nowrap",
             "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 12,
-            "padding-inline-start": 0,
+            "padding-inline-start": 10,
             "padding-inline-end": 0
           },
           "blocks": {}
@@ -32,7 +40,7 @@
         "hoops_headline": {
           "type": "text",
           "settings": {
-            "text": "<p>Blessed<br>Hoops</p>",
+            "text": "<p>Blessed<br/>Hoops</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -44,9 +52,12 @@
             "case": "uppercase",
             "wrap": "pretty",
             "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 20,
-            "padding-inline-start": 0,
+            "padding-inline-start": 10,
             "padding-inline-end": 0
           },
           "blocks": {}
@@ -54,7 +65,7 @@
         "hoops_sub": {
           "type": "text",
           "settings": {
-            "text": "<p>A community of ballers, grinders, and dreamers. From weekend warriors to Euroleague pros — this is where the blessed play.</p>",
+            "text": "<p>This is where the clothing came from. Not a mood board. Not a marketing brief. A real basketball program that's been on the ground since 2017, developing players, awarding scholarships, and sending kids to the next level.</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -66,21 +77,33 @@
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 0,
+            "padding-inline-start": 10,
             "padding-inline-end": 0
           },
           "blocks": {}
         }
       },
-      "block_order": ["hoops_eyebrow", "hoops_headline", "hoops_sub"],
+      "block_order": [
+        "hoops_eyebrow",
+        "hoops_headline",
+        "hoops_sub"
+      ],
       "name": "Blessed Hoops Hero",
       "settings": {
         "media_type_1": "image",
+        "image_1": "shopify://shop_images/Blessed_Hoops_Cameo.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -91,6 +114,7 @@
         "gap": 0,
         "section_width": "full-width",
         "section_height": "large",
+        "section_height_custom": 50,
         "color_scheme": "scheme-1",
         "toggle_overlay": true,
         "overlay_color": "#0a0a0a99",
@@ -102,6 +126,46 @@
         "padding-block-end": 80
       }
     },
+    "blessed_brand_story_9q6mGM": {
+      "type": "blessed-brand-story",
+      "blocks": {
+        "stat_tP34UA": {
+          "type": "stat",
+          "settings": {
+            "number": "12+",
+            "label": "Pro Athletes"
+          }
+        },
+        "stat_rNKzhc": {
+          "type": "stat",
+          "settings": {
+            "number": "3",
+            "label": "Countries"
+          }
+        },
+        "stat_GLQLyb": {
+          "type": "stat",
+          "settings": {
+            "number": "2022",
+            "label": "Founded"
+          }
+        }
+      },
+      "block_order": [
+        "stat_tP34UA",
+        "stat_rNKzhc",
+        "stat_GLQLyb"
+      ],
+      "name": "Brand Story",
+      "settings": {
+        "eyebrow": "The Movement",
+        "heading": "<p>We Didn't Just Borrow Basketball Culture... </p><p>We Built It.</p>",
+        "body_1": "Blessed Hoops started in 2017 on the courts of New York City. Not just any courts. Dyckman. Rucker Park. The Gauchos. Places where basketball is a language and showing up means something. From there it grew into camps across Switzerland, the UK, Senegal, Haiti, and the Dominican Republic, welcoming between 50 to 100 players per camp.",
+        "body_2": "Worn by Euroleague professionals and grinders alike, our pieces carry the weight of what it means to be truly blessed.",
+        "link": "",
+        "link_label": "Our Story"
+      }
+    },
     "hoops_content": {
       "type": "main-page",
       "blocks": {
@@ -111,7 +175,9 @@
           "blocks": {}
         }
       },
-      "block_order": ["page-content"],
+      "block_order": [
+        "page-content"
+      ],
       "name": "Blessed Hoops Content",
       "settings": {
         "content_direction": "column",
@@ -124,18 +190,46 @@
     "hoops_proof": {
       "type": "blessed-proof-band",
       "blocks": {
-        "logo_barcelona": { "type": "logo", "settings": { "name": "FC Barcelona" } },
-        "logo_euroleague": { "type": "logo", "settings": { "name": "Euroleague" } },
-        "logo_nba": { "type": "logo", "settings": { "name": "NBA" } },
-        "logo_marbury": { "type": "logo", "settings": { "name": "Stephon Marbury" } }
+        "logo_barcelona": {
+          "type": "logo",
+          "settings": {
+            "name": "FC Barcelona"
+          }
+        },
+        "logo_euroleague": {
+          "type": "logo",
+          "settings": {
+            "name": "Euroleague"
+          }
+        },
+        "logo_nba": {
+          "type": "logo",
+          "settings": {
+            "name": "NBA"
+          }
+        },
+        "logo_marbury": {
+          "type": "logo",
+          "settings": {
+            "name": "Stephon Marbury"
+          }
+        }
       },
-      "block_order": ["logo_barcelona", "logo_euroleague", "logo_nba", "logo_marbury"],
+      "block_order": [
+        "logo_barcelona",
+        "logo_euroleague",
+        "logo_nba",
+        "logo_marbury"
+      ],
       "name": "Partners",
-      "settings": { "label": "Played at" }
+      "settings": {
+        "label": "Played at"
+      }
     }
   },
   "order": [
     "hoops_hero",
+    "blessed_brand_story_9q6mGM",
     "hoops_content",
     "hoops_proof"
   ]
