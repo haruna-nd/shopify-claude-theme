@@ -126,6 +126,17 @@
         "padding-block-end": 80
       }
     },
+    "hoops_content": {
+      "type": "main-page",
+      "name": "Blessed Hoops Content",
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 64,
+        "padding-block-end": 0
+      }
+    },
     "blessed_brand_story_9q6mGM": {
       "type": "blessed-brand-story",
       "blocks": {
@@ -163,8 +174,8 @@
         "heading": "<p>We Didn't Just Borrow Basketball Culture... </p><p>We Built It.</p>",
         "body_1": "Blessed Hoops started in 2017 on the courts of New York City. Not just any courts. Dyckman. Rucker Park. The Gauchos. Places where basketball is a language and showing up means something. From there it grew into camps across Switzerland, the UK, Senegal, Haiti, and the Dominican Republic, welcoming between 50 to 100 players per camp.",
         "body_2": "Over 30 scholarships awarded. Players placed in NCAA programs, European pro leagues, and development academies across Spain, Portugal, and the USA. Coaches, players, and alumni from elite programs on three continents. Giannis Antetokounmpo showed up to watch. Kevin Punter of FC Barcelona came on as an ambassador. This is the world Blessed Sportswear was born into.",
-        "link": "https://blessedhoops.com/",
-        "link_label": "Blessed Hoops"
+        "link": "",
+        "link_label": ""
       }
     },
     "blessed_proof_band_FFge9i": {
@@ -219,27 +230,6 @@
         "link_label": "Our Story"
       }
     },
-    "hoops_content": {
-      "type": "main-page",
-      "blocks": {
-        "page-content": {
-          "type": "page-content",
-          "settings": {},
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "page-content"
-      ],
-      "name": "Blessed Hoops Content",
-      "settings": {
-        "content_direction": "column",
-        "gap": 32,
-        "color_scheme": "",
-        "padding-block-start": 64,
-        "padding-block-end": 80
-      }
-    },
     "hoops_proof": {
       "type": "blessed-proof-band",
       "blocks": {
@@ -278,14 +268,28 @@
       "settings": {
         "label": "Played at"
       }
+    },
+    "blessed_brand_story_pc97n6": {
+      "type": "blessed-brand-story",
+      "name": "Brand Story",
+      "settings": {
+        "image": "shopify://shop_images/SnapInsta.to_571743594_18328902472210574_3464873837099798509_n.webp",
+        "eyebrow": "",
+        "heading": "<p>Worn By The Ones Who Made It.</p>",
+        "body_1": "Kevin Punter. FC Barcelona. Euroleague. He didn't just wear Blessed, he became part of the program. When players at that level attach their name to something, it isn't for a cheque. It's because it represents something real.",
+        "body_2": "",
+        "link": "https://blessedhoops.com/",
+        "link_label": "Visit Blessed Hoops"
+      }
     }
   },
   "order": [
     "hoops_hero",
+    "hoops_content",
     "blessed_brand_story_9q6mGM",
     "blessed_proof_band_FFge9i",
     "blessed_brand_story_Ecg3Bf",
-    "hoops_content",
-    "hoops_proof"
+    "hoops_proof",
+    "blessed_brand_story_pc97n6"
   ]
 }
