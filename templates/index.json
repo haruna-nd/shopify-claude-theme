@@ -181,7 +181,7 @@
         "marquee_text_1": {
           "type": "text",
           "settings": {
-            "text": "<p>FREE SHIPPING OVER CHF 150</p>",
+            "text": "<p>FREE SHIPPING OVER $120</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
