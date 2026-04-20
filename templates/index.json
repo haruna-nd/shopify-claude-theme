@@ -137,7 +137,7 @@
         "stack_media_on_mobile": false,
         "custom_mobile_media": true,
         "media_type_1_mobile": "image",
-        "image_1_mobile": "shopify://shop_images/anelissaphoto-37.jpg",
+        "image_1_mobile": "shopify://shop_images/STR_blessedMark-37.jpg",
         "media_type_2_mobile": "image",
         "link": "",
         "open_in_new_tab": false,
@@ -725,7 +725,7 @@
       ],
       "name": "Brand Story",
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2026-04-11_at_19.41.14.png",
+        "image": "shopify://shop_images/STR_blessedMark-6_1.jpg",
         "eyebrow": "The Movement",
         "heading": "<p>Born From<br/>The Court</p>",
         "body_1": "Blessed Sportswear was forged in the gyms and courts of Switzerland, where ambition meets discipline, and every rep is a prayer.",
@@ -847,7 +847,7 @@
       "name": "Testimonials",
       "settings": {
         "featured_quote": "Blessed is not just a brand, it's a mindset. Every time I step on the court wearing it, I feel that.",
-        "featured_author": "Nigel Hayes-Davis",
+        "featured_author": "Kevin Punter Jr",
         "featured_role": "FC Barcelona · Euroleague"
       }
     },
