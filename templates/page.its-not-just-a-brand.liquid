@@ -1,6 +1,6 @@
 {% comment %}
   ============================================================
-  BLESSED SPORTSWEAR · Brand Page Template
+  BLESSED SPORTSWEAR · Brand Page Template (v2)
   ============================================================
   FILE NAME:   page.its-not-just-a-brand.liquid
   LOCATION:    /templates/
@@ -30,7 +30,7 @@
           </a>
         </div>
         <div class="bnj-hero__meta">
-          <span>Free US Shipping $150+</span>
+          <span>Free US Shipping $120+</span>
           <span class="bnj-divider"></span>
           <span>60 Day Returns</span>
         </div>
@@ -100,6 +100,72 @@
     </div>
   </section>
 
+  {% comment %} ============ COLLECTION (3 FEATURED PRODUCTS - EDITORIAL) ============ {% endcomment %}
+  <section class="bnj-collection">
+    <div class="bnj-container">
+      <div class="bnj-section-header">
+        <div class="bnj-eyebrow bnj-eyebrow--center">The Pieces</div>
+        <h2 class="bnj-section-headline">
+          BUILT FOR THE <span class="bnj-italic">Everyday</span><br>
+          GRIND.
+        </h2>
+        <p class="bnj-section-deck">Three pieces from the family. Heavyweight builds. Premium feel. Made to live in.</p>
+      </div>
+
+      {%- assign product_handles = "oversized-hoodie-ivory,oversized-hoodie-slate,core-hoodie-ash" | split: "," -%}
+      <div class="bnj-editorial-products">
+        {%- for handle in product_handles -%}
+          {%- assign product = all_products[handle] -%}
+          {%- if product.id -%}
+            <div class="bnj-editorial-product {% cycle 'is-left', 'is-right', 'is-left' %}">
+              <a href="{{ product.url }}" class="bnj-editorial-product__image">
+                {%- if product.featured_image -%}
+                  <img src="{{ product.featured_image | image_url: width: 1000 }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy" width="1000" height="1250">
+                {%- endif -%}
+                {%- if product.tags contains 'bestseller' -%}
+                  <span class="bnj-editorial-product__tag">Bestseller</span>
+                {%- elsif product.tags contains 'new' -%}
+                  <span class="bnj-editorial-product__tag">New</span>
+                {%- endif -%}
+              </a>
+              <div class="bnj-editorial-product__info">
+                <div class="bnj-editorial-product__num">{{ forloop.index | prepend: "0" }}</div>
+                <div class="bnj-editorial-product__eyebrow">Featured Piece</div>
+                <h3 class="bnj-editorial-product__title">{{ product.title }}</h3>
+                {%- if product.description != blank -%}
+                  <p class="bnj-editorial-product__desc">{{ product.description | strip_html | truncate: 200 }}</p>
+                {%- else -%}
+                  <p class="bnj-editorial-product__desc">Premium heavyweight build. Designed to live in. Made for the work nobody sees.</p>
+                {%- endif -%}
+                <div class="bnj-editorial-product__price-row">
+                  <p class="bnj-editorial-product__price">
+                    {%- if product.compare_at_price > product.price -%}
+                      <span class="bnj-editorial-product__price-sale">{{ product.price | money }}</span>
+                      <span class="bnj-editorial-product__price-was">{{ product.compare_at_price | money }}</span>
+                    {%- else -%}
+                      {{ product.price | money }}
+                    {%- endif -%}
+                  </p>
+                  <a href="{{ product.url }}" class="bnj-btn bnj-btn--primary">
+                    Shop Now
+                    <span class="bnj-arrow">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="bnj-collection__cta">
+        <a href="/collections/all" class="bnj-btn bnj-btn--secondary">
+          Shop The Full Collection
+          <span class="bnj-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   {% comment %} ============ ORIGIN STORY ============ {% endcomment %}
   <section class="bnj-origin">
     <div class="bnj-container">
@@ -112,9 +178,9 @@
             BUILT IN THE <span class="bnj-italic">Gym,</span><br>
             NOT THE BOARDROOM.
           </h2>
-          <p>Blessed didn't start in a fashion office. It started on a hardwood floor, between drills, during the kind of conversations that happen when sweat dries and athletes talk about who they really want to become.</p>
+          <p>Blessed didn't start in a fashion office. It started on a hardwood floor at Blessed Hoops, between drills, during the kind of conversations that happen when sweat dries and athletes talk about who they really want to become.</p>
           <p>We run real basketball camps, mentor real athletes, and watch real transformation happen in places most brands never visit. The clothing came after. It had to. Because the athletes we work with deserved gear that actually represented them.</p>
-          <p>Every hoodie, every set, every tee carries that origin. This isn't a brand built to sell to athletes. It's a brand built by people who train alongside them.</p>
+          <p>Born in sport. Built for the streets. Every hoodie, every set, every tee carries that origin. This isn't a brand built to sell to athletes. It's a brand built by people who train alongside them.</p>
           <div class="bnj-origin__tag">
             <span class="bnj-origin__tag-label">Since Day One</span>
             <span class="bnj-origin__tag-text">Camps. Clubs. Community.</span>
@@ -122,6 +188,12 @@
         </div>
       </div>
     </div>
+  </section>
+
+  {% comment %} ============ EDITORIAL SPLIT 01 ============ {% endcomment %}
+  <section class="bnj-split">
+    <div class="bnj-split__image" style="background-image: url('https://cdn.shopify.com/s/files/1/0726/4210/1338/files/anelissaphoto_3of52.jpg?v=1777628657');"></div>
+    <div class="bnj-split__image" style="background-image: url('https://cdn.shopify.com/s/files/1/0726/4210/1338/files/STR_blessedMark-6_1.jpg?v=1776674873');"></div>
   </section>
 
   {% comment %} ============ VIDEO ============ {% endcomment %}
@@ -168,7 +240,15 @@
 
       <div class="bnj-reels__grid">
         <div class="bnj-reel" data-bnj-reel>
-          <video class="bnj-reel__video" preload="metadata" playsinline muted loop data-bnj-reel-el>
+          <video
+            class="bnj-reel__video"
+            preload="auto"
+            playsinline
+            muted
+            loop
+            autoplay
+            data-bnj-reel-el
+          >
             <source src="https://cdn.shopify.com/videos/c/o/v/6ab15809318f4cbda6772405def079c1.mp4" type="video/mp4">
           </video>
           <button class="bnj-reel__play" aria-label="Play story" data-bnj-reel-trigger>
@@ -179,7 +259,15 @@
         </div>
 
         <div class="bnj-reel" data-bnj-reel>
-          <video class="bnj-reel__video" preload="metadata" playsinline muted loop data-bnj-reel-el>
+          <video
+            class="bnj-reel__video"
+            preload="auto"
+            playsinline
+            muted
+            loop
+            autoplay
+            data-bnj-reel-el
+          >
             <source src="https://cdn.shopify.com/videos/c/o/v/266f09cc6ff4446a9365a35ec448c594.mp4" type="video/mp4">
           </video>
           <button class="bnj-reel__play" aria-label="Play story" data-bnj-reel-trigger>
@@ -190,7 +278,15 @@
         </div>
 
         <div class="bnj-reel" data-bnj-reel>
-          <video class="bnj-reel__video" preload="metadata" playsinline muted loop data-bnj-reel-el>
+          <video
+            class="bnj-reel__video"
+            preload="auto"
+            playsinline
+            muted
+            loop
+            autoplay
+            data-bnj-reel-el
+          >
             <source src="https://cdn.shopify.com/videos/c/o/v/d9097f8d52ad448d88f21a106764a8c2.mp4" type="video/mp4">
           </video>
           <button class="bnj-reel__play" aria-label="Play story" data-bnj-reel-trigger>
@@ -234,6 +330,19 @@
     </div>
   </section>
 
+  {% comment %} ============ EDITORIAL FULL BLEED ============ {% endcomment %}
+  <section class="bnj-fullbleed" style="background-image: url('https://cdn.shopify.com/s/files/1/0726/4210/1338/files/anelissaphoto-38.jpg?v=1777654998');">
+    <div class="bnj-fullbleed__overlay"></div>
+    <div class="bnj-fullbleed__inner">
+      <div class="bnj-eyebrow bnj-eyebrow--center">Sport. Streets. Life.</div>
+      <h2 class="bnj-fullbleed__headline">
+        FROM THE COURT.<br>
+        <span class="bnj-italic">To The</span> CONCRETE.
+      </h2>
+      <p class="bnj-fullbleed__text">Born in basketball. Built for everywhere the work takes you. Blessed lives between the gym, the streets, and the in between.</p>
+    </div>
+  </section>
+
   {% comment %} ============ EDITORIAL QUOTE ============ {% endcomment %}
   <section class="bnj-quote" style="background-image: url('https://cdn.shopify.com/s/files/1/0726/4210/1338/files/2_7_ba985e6c-22d8-4abc-8aa8-cb91e9caa224.png?v=1777629599');">
     <div class="bnj-quote__overlay"></div>
@@ -243,58 +352,6 @@
         I finally feel like I'm wearing gear that actually represents who I am as an athlete.
       </p>
       <div class="bnj-quote__attribution">A Blessed Customer</div>
-    </div>
-  </section>
-
-  {% comment %} ============ COLLECTION (REAL PRODUCTS) ============ {% endcomment %}
-  <section class="bnj-collection">
-    <div class="bnj-container">
-      <div class="bnj-section-header">
-        <div class="bnj-eyebrow bnj-eyebrow--center">The Collection</div>
-        <h2 class="bnj-section-headline">
-          MADE FOR THE <span class="bnj-italic">Whole</span><br>
-          DAY.
-        </h2>
-        <p class="bnj-section-deck">From training to walking off the court to wherever the day takes you. Premium pieces designed to move with you.</p>
-      </div>
-
-      {%- assign featured_collection = collections['oversized-hoodie'] -%}
-      <div class="bnj-collection__grid">
-        {%- for product in featured_collection.products limit: 6 -%}
-          <a href="{{ product.url }}" class="bnj-product">
-            <div class="bnj-product__image">
-              {%- if product.featured_image -%}
-                <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy" width="600" height="750">
-              {%- else -%}
-                <div class="bnj-product__placeholder">{{ product.title | upcase }}</div>
-              {%- endif -%}
-              {%- if product.tags contains 'bestseller' -%}
-                <span class="bnj-product__tag">Bestseller</span>
-              {%- elsif product.tags contains 'new' -%}
-                <span class="bnj-product__tag">New</span>
-              {%- endif -%}
-            </div>
-            <div class="bnj-product__info">
-              <h3>{{ product.title }}</h3>
-              <p class="bnj-product__price">
-                {%- if product.compare_at_price > product.price -%}
-                  <span class="bnj-product__price-sale">{{ product.price | money }}</span>
-                  <span class="bnj-product__price-was">{{ product.compare_at_price | money }}</span>
-                {%- else -%}
-                  {{ product.price | money }}
-                {%- endif -%}
-              </p>
-            </div>
-          </a>
-        {%- endfor -%}
-      </div>
-
-      <div class="bnj-collection__cta">
-        <a href="/collections/all" class="bnj-btn bnj-btn--secondary">
-          Shop All Pieces
-          <span class="bnj-arrow">→</span>
-        </a>
-      </div>
     </div>
   </section>
 
@@ -345,6 +402,13 @@
         </div>
       </div>
     </div>
+  </section>
+
+  {% comment %} ============ EDITORIAL TRIPLE STRIP ============ {% endcomment %}
+  <section class="bnj-triple">
+    <div class="bnj-triple__item" style="background-image: url('https://cdn.shopify.com/s/files/1/0726/4210/1338/files/Screenshot_2025-11-12_110452.jpg?v=1777654998');"></div>
+    <div class="bnj-triple__item" style="background-image: url('https://cdn.shopify.com/s/files/1/0726/4210/1338/files/anelissaphoto-47.jpg?v=1776248984');"></div>
+    <div class="bnj-triple__item" style="background-image: url('https://cdn.shopify.com/s/files/1/0726/4210/1338/files/anelissaphoto-22.jpg?v=1776326287');"></div>
   </section>
 
   {% comment %} ============ COMMUNITY ============ {% endcomment %}
@@ -399,7 +463,7 @@
             <span class="bnj-faq__toggle"></span>
           </button>
           <div class="bnj-faq__a">
-            <div class="bnj-faq__a-inner">7 to 10 business days from order to door. Free on US orders over $150. Tracking sent the moment your order leaves the warehouse.</div>
+            <div class="bnj-faq__a-inner">7 to 10 business days from order to door. Free on US orders over $120. Tracking sent the moment your order leaves the warehouse.</div>
           </div>
         </div>
         <div class="bnj-faq__item">
@@ -451,7 +515,7 @@
         WEAR THE WORK.
       </h2>
       <p class="bnj-final__deck">
-        Premium sportswear for the disciplined. Free shipping on US orders over $150. 60 day returns on every piece.
+        Premium sportswear for the disciplined. Free shipping on US orders over $120. 60 day returns on every piece.
       </p>
       <a href="/collections/all" class="bnj-btn bnj-btn--primary">
         Shop The Collection
@@ -467,6 +531,7 @@
 (function() {
   'use strict';
 
+  // FAQ accordion
   document.addEventListener('click', function(e) {
     var faqQ = e.target.closest('.bnj-faq__q');
     if (faqQ) {
@@ -475,6 +540,7 @@
     }
   });
 
+  // Main video
   var videoBtns = document.querySelectorAll('[data-bnj-video-trigger]');
   videoBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
@@ -494,60 +560,54 @@
     });
   });
 
-  var reelBtns = document.querySelectorAll('[data-bnj-reel-trigger]');
-  reelBtns.forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      var wrap = btn.closest('[data-bnj-reel]');
-      if (!wrap) return;
-      var video = wrap.querySelector('[data-bnj-reel-el]');
-      if (!video) return;
-
-      document.querySelectorAll('[data-bnj-reel]').forEach(function(other) {
-        if (other !== wrap) {
-          var otherVid = other.querySelector('[data-bnj-reel-el]');
-          if (otherVid && !otherVid.paused) {
-            otherVid.pause();
-            otherVid.muted = true;
-            otherVid.controls = false;
-            other.classList.remove('is-playing');
-          }
-        }
-      });
-
-      if (video.paused) {
-        video.muted = false;
-        video.controls = true;
-        video.play();
-        wrap.classList.add('is-playing');
-      } else {
-        video.pause();
-        video.muted = true;
-        video.controls = false;
-        wrap.classList.remove('is-playing');
-      }
-    });
-  });
-
-  var reels = document.querySelectorAll('[data-bnj-reel]');
-  reels.forEach(function(reel) {
-    var video = reel.querySelector('[data-bnj-reel-el]');
+  // Reels: single click plays with sound, click again to pause
+  function bnjPlayReel(wrap) {
+    if (!wrap) return;
+    var video = wrap.querySelector('[data-bnj-reel-el]');
     if (!video) return;
-    reel.addEventListener('mouseenter', function() {
-      if (window.innerWidth > 900 && !reel.classList.contains('is-playing')) {
-        video.play().catch(function() {});
+
+    document.querySelectorAll('[data-bnj-reel]').forEach(function(other) {
+      if (other !== wrap) {
+        var otherVid = other.querySelector('[data-bnj-reel-el]');
+        if (otherVid) {
+          otherVid.pause();
+          otherVid.muted = true;
+          otherVid.controls = false;
+          other.classList.remove('is-playing');
+        }
       }
     });
-    reel.addEventListener('mouseleave', function() {
-      if (!reel.classList.contains('is-playing')) {
-        video.pause();
-        video.currentTime = 0;
+
+    if (wrap.classList.contains('is-playing')) {
+      video.pause();
+      video.muted = true;
+      video.controls = false;
+      wrap.classList.remove('is-playing');
+    } else {
+      video.muted = false;
+      video.controls = true;
+      var p = video.play();
+      if (p && p.catch) {
+        p.catch(function() {
+          video.muted = true;
+          video.play();
+        });
       }
+      wrap.classList.add('is-playing');
+    }
+  }
+
+  document.querySelectorAll('[data-bnj-reel]').forEach(function(reel) {
+    reel.addEventListener('click', function(e) {
+      if (reel.classList.contains('is-playing') && e.target.tagName === 'VIDEO') return;
+      e.preventDefault();
+      bnjPlayReel(reel);
     });
   });
 
+  // Reveal on scroll
   if ('IntersectionObserver' in window) {
-    var revealEls = document.querySelectorAll('.bnj-page .bnj-section-headline, .bnj-page .bnj-mission__text, .bnj-page .bnj-origin__grid, .bnj-page .bnj-reel, .bnj-page .bnj-pillar, .bnj-page .bnj-quote__inner, .bnj-page .bnj-product, .bnj-page .bnj-testimonial, .bnj-page .bnj-faq__item, .bnj-page .bnj-final__inner');
+    var revealEls = document.querySelectorAll('.bnj-page .bnj-section-headline, .bnj-page .bnj-mission__text, .bnj-page .bnj-origin__grid, .bnj-page .bnj-reel, .bnj-page .bnj-pillar, .bnj-page .bnj-quote__inner, .bnj-page .bnj-product, .bnj-page .bnj-editorial-product, .bnj-page .bnj-testimonial, .bnj-page .bnj-faq__item, .bnj-page .bnj-final__inner, .bnj-page .bnj-fullbleed__inner');
     revealEls.forEach(function(el) { el.classList.add('bnj-reveal'); });
 
     var observer = new IntersectionObserver(function(entries) {
