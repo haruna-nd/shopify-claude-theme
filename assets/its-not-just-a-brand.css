@@ -1259,6 +1259,255 @@ main .section-content-wrapper h1:first-child {
   transform: translateY(0);
 }
 
+/* ─── EDITORIAL PRODUCTS (3 featured side-by-side layout) ─── */
+.bnj-editorial-products {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.bnj-editorial-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.bnj-editorial-product.is-right {
+  direction: rtl;
+}
+.bnj-editorial-product.is-right > * {
+  direction: ltr;
+}
+.bnj-editorial-product__image {
+  display: block;
+  aspect-ratio: 4/5;
+  background: var(--charcoal);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--border);
+  text-decoration: none;
+}
+.bnj-editorial-product__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+.bnj-editorial-product__image:hover img {
+  transform: scale(1.05);
+}
+.bnj-editorial-product__tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--accent);
+  color: var(--black);
+  padding: 6px 12px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.bnj-editorial-product__info {
+  padding: 0 16px;
+}
+.bnj-editorial-product__num {
+  font-family: var(--font-display) !important;
+  font-size: 64px;
+  line-height: 0.9;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+.bnj-editorial-product__eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--warm-grey);
+  margin-bottom: 18px;
+}
+.bnj-editorial-product__title {
+  font-family: var(--font-display) !important;
+  font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.bnj-editorial-product__desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--cream);
+  margin-bottom: 32px;
+}
+.bnj-editorial-product__price-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.bnj-editorial-product__price {
+  font-family: var(--font-display) !important;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+.bnj-editorial-product__price-sale {
+  color: var(--accent);
+}
+.bnj-editorial-product__price-was {
+  color: var(--muted);
+  text-decoration: line-through;
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+/* ─── SPLIT BANNER (2 images side by side) ─── */
+.bnj-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: var(--black);
+}
+.bnj-split__image {
+  aspect-ratio: 4/5;
+  background-color: var(--charcoal);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ─── FULL BLEED EDITORIAL ─── */
+.bnj-fullbleed {
+  position: relative;
+  min-height: 70vh;
+  background-color: var(--charcoal);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 32px;
+  text-align: center;
+}
+.bnj-fullbleed__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,10,10,0.6);
+  z-index: 1;
+}
+.bnj-fullbleed__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 920px;
+}
+.bnj-fullbleed__headline {
+  font-family: var(--font-display) !important;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.bnj-fullbleed__headline .bnj-italic {
+  color: var(--accent);
+  font-size: 0.7em;
+  letter-spacing: -0.01em;
+}
+.bnj-fullbleed__text {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--cream);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ─── TRIPLE STRIP (3 images side by side) ─── */
+.bnj-triple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  background: var(--black);
+}
+.bnj-triple__item {
+  aspect-ratio: 4/5;
+  background-color: var(--charcoal);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ─── RESPONSIVE OVERRIDES ─── */
+@media (max-width: 900px) {
+  .bnj-editorial-products {
+    gap: 64px;
+  }
+  .bnj-editorial-product,
+  .bnj-editorial-product.is-right {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    direction: ltr;
+  }
+  .bnj-editorial-product__num {
+    font-size: 48px;
+  }
+  .bnj-split {
+    grid-template-columns: 1fr;
+  }
+  .bnj-split__image {
+    aspect-ratio: 16/10;
+  }
+  .bnj-fullbleed {
+    min-height: 60vh;
+    padding: 80px 24px;
+  }
+  .bnj-triple {
+    grid-template-columns: 1fr;
+  }
+  .bnj-triple__item {
+    aspect-ratio: 16/10;
+  }
+  .bnj-reels__grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: none !important;
+    gap: 12px;
+  }
+  .bnj-reels__grid .bnj-reel:last-child {
+    grid-column: 1 / -1 !important;
+    max-width: none !important;
+    margin: 0 !important;
+    width: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .bnj-editorial-product__price-row {
+    gap: 16px;
+  }
+  .bnj-editorial-product__price {
+    font-size: 22px;
+  }
+  .bnj-reels__grid {
+    grid-template-columns: 1fr !important;
+    max-width: 380px !important;
+    margin: 0 auto !important;
+  }
+  .bnj-reels__grid .bnj-reel:last-child {
+    grid-column: auto !important;
+  }
+}
+
 /* ── PRINT / LEGACY HIDE FALLBACKS ──────────────────────────── */
 @media print {
   .bnj-page { background: white; color: black; }
