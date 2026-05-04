@@ -821,22 +821,21 @@
           "type": "testimonial",
           "settings": {
             "quote": "The quality is unreal. Finally a brand that understands what athletes actually need.",
-            "author": "Marco B. — Pro Player"
+            "author": "Malevy Leons — Golden State Warriiors"
           }
         },
         "testimonial_2": {
           "type": "testimonial",
           "settings": {
-            "quote": "Wore the set all through pre-season. Most comfortable training gear I've ever had.",
-            "author": "Jamal T. — Swiss League"
+            "quote": "Wore the set all through preseason. Most comfortable training gear I've ever had.",
+            "author": "James Nnaji — Baylor University"
           }
         },
         "testimonial_3": {
           "type": "testimonial",
-          "disabled": true,
           "settings": {
             "quote": "The aesthetics match the performance. It's rare to find that combination.",
-            "author": "A. Santos — Euroleague Academy"
+            "author": "Pindown Basketball — Madrid"
           }
         }
       },
