@@ -833,6 +833,7 @@
         },
         "testimonial_3": {
           "type": "testimonial",
+          "disabled": true,
           "settings": {
             "quote": "The aesthetics match the performance. It's rare to find that combination.",
             "author": "A. Santos — Euroleague Academy"
