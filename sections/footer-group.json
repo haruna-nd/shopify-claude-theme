@@ -76,7 +76,7 @@
             "brand_tagline": {
               "type": "text",
               "settings": {
-                "text": "<p>Premium basketball-inspired sports & streetwear. Forged in dedication, worn by professionals.</p>",
+                "text": "<p>Premium basketball-inspired sports & streetwear. Forged in dedication, worn by professionals.</p><p>Contact Us: </p><p>info@blessedsportswear.com</p><p>+41 78 717 18 10</p>",
                 "width": "100%",
                 "max_width": "narrow",
                 "alignment": "left",
